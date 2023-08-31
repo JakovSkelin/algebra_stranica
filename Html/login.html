@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/Css/loginref.css"></link>
+    <link rel="stylesheet" href="..\css\navigacija.css">
+    <link rel="stylesheet" href="..\css\kontakt.css">
+</head>
+<body>
+    <div class="navigation_bar">
+        <div class="nav_buttons">
+            <a id="odjava" onclick="clearToken()" href="login.html" class="login">Odjava</a>
+            <a id="login" href="login.html" class="login">Prijava</a>
+            <a href="Pocetna.html">Početna</a>
+            <a href="o-nama.html">O nama</a>
+            <a href="novosti.html">Novosti</a>
+            <a id="nastavni" href="nastavniplan.html">Nastavni plan</a>
+            <button id="show-popup">Kontakt</button>         
+        </div>
+    </div>
+
+    <div id="form">
+        <h1>Prijava</h1>
+            <form id="loginForm">
+                <label for="username">Unesite korisničko ime:</label>
+                <input type="username" id="username" name="username" placeholder="Korisničko ime..." required>
+                
+                <label for="password">Unesite lozinku:</label>
+                <input type="password" id="password" name="password" placeholder="Lozinka..." required>
+                
+                <input id="btnLogin" type="submit" value="Login">
+                
+                <label id="lbRegister">Nemate račun?</label>
+                <input id="btnRegister" type="button" value="Registriraj se"></input> 
+
+                <p id="loginStatus"></p>
+            </form>
+    </div>
+
+    <script src="/JS/loginandregister.js"></script>
+    <script src="/JS/token.js"></script>
+    
+</body>
+</html>
